@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap'); 
+/* sempre quando for importar algo, é OBRIGATORIO estar nas primeiras linhas antes do codigo */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+nav {
+    background-color: #cc0003;
+    line-height: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;  /* transforma o texto em maiúsculas, minúsculas ou apenas a primeira letra maiúscula */
+    padding: 10px 20px;
+    transition: all 0.8s;
+}
+
+
+nav a:hover, nav a:active {
+    color: #ff9898;
+    text-shadow: rgb(241, 172, 172) 3px 3px 8px; /* sombra no texto - valores na ordem: cor, desloc. horizontal, desloc. vertical, suavização da sombra */
+}
+
+.col1, .col2, .col3 {
+    margin-bottom: 50px;
+}
+
+
+footer {
+    color: #FFB5B6;
+    background-color: #cc0003;
+    text-align: center;
+}
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto)); /* grid-template-columns cria colunas verticais. repeat repete os elementos.*/ 
+    gap: 5px; /* Gap determina o espaço entre os elementos quando usado com grid */
+}
+
+.form  label {
+    font-weight: bold; /* coloca uma fonte em negrito */
+    border-bottom: 1px solid #300040; /* borda em baixo, ela pega o elemento inteiro */
+    margin-bottom: 20px; /* espaço em baixo */
+    width: 20%; /* ajusta a largura */
+    display: inline-block;
+
+
+}
+
+.form input {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+    /* cor da sombra, desl. x, desl. y, desfoque da sombra e tamanho da sombra */
+    height: 30px;
+    width: 70%;
+    border: solid 1px #300040;
+
+}
+
+.contato_texto{
+    text-align: center;
+}
+.form input:hover, .form textarea:hover {
+    background-color: white;
+
+}
+
+.form textarea {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px 1px;
+
+    height: 60px;
+    width: 70%;
+    border: solid 1px #300040;
+}
+
+/* a pseudo classe :focus formata o campo de formulario apenas quando ele esta ativo (recebendo o foco) */
+.form input:focus, .form textarea:focus {
+    outline: violet;
+    outline-style: dotted;
+    outline-width: 1px;
+    /* outline formata a borda da borda (formata a linha de fora da borda) */
+}
+/* esta cor vai aparecer na borda quando o campo estiver valido */
+.form input:valid {
+    border: green 2px solid;
+}
+/* esta cor vai aparecer na borda quando o campo estiver invalido */
+.form input:invalid {
+    border: red 2px solid;
+}
+
+/* apenas este tipo de elemento que tem a ação "submit" vai ser afetado (o botao para enviar o formulario no caso) */
+.form input[type=submit] {
+    border: #670103 2px solid;
+    background-image: linear-gradient(#d63232, #941414); /* isso vai criar um gradiente linear, voce pode adicionar mais que 2 cores porem a ordem na qual voce coloca elas importa no codigo */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 92.5%;
+    margin-bottom: 20px;
+    padding: 5px; /* vai ajustar a posição do elemento dentro do elemento/caixa (texto dentro da caixa) */
+
+}
+
+.form {
+ box-sizing: border-box;
+ padding: 0 5%;
+ margin-bottom: 20px;   
+
+}
+
+/* breakpoints - ponto de quebra de layout */
+
+/* CSS para telas acima de 760px */
+@media screen and (min-width: 760px) {
+
+    
+    .colunas {
+        display: flex;
+        flex-wrap: wrap; /* determina quebra de conteúdo flexbox */
+        justify-content: space-between;
+    }
+
+    .col1, .col2, .col3 {
+        width: 32.5%;
+        margin-bottom: 10px;
+    }
+
+    .form, .mapa {
+        width: 45%;
+        display: inline-block; 
+        vertical-align: top; /* vai alinhar pelo topo */
+    }
+
+
+  
+}

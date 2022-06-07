@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de trabalhos - Responsivando</title>
+
+    <!-- Descrição resumida da página -->
+    <meta name="description" content="Fale com a equipe responsivando">
+
+    <!-- Palavras-chave de página -->
+    <meta name="keywords" content="contato criação de sites, responsivando,">
+
+    <!-- Inserindo favicon-->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Link para arquivo css externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- cabeçalho contém apenas o menu neste exercício -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Página incial">início</a></li>
+                <li><a href="galeria.html" title="galeria de trabalhos">galeria</a></li>
+                <li><a href="multimidia.html" title="conteúdo multmídia">multimídia</a></li>
+
+                <li><a href="contato.html" title="Fale conosco">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contato">
+        <h1>Fale conosco</h1>
+        <p class="contato_texto">Preencha o formulario abaixo, ligue para 11 2345-6789 ou se preferir, visite-nos na rua francisco coimbra, 403 - penha - são paulo</p>
+      <div class="form">
+        <form action="envia.php" method="post"> <!-- o metodo post e o melhor, tambem tem o dialog e get mas o post e o mais recomendado -->
+
+            <div>
+                <label for="name">Nome:</label> <!-- isso e uma etiqueta para uma tag de formulario, e util para o google poder identificar melhor seu site -->
+                <input type="text" id="name" name="name" required> <!-- required torna o preenchimento deste campo obrigatorio -->
+            </div>
+
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="digite seu melhor e-mail"> <!-- placeholder deixa um texto de fundo para instrução, ele some automaticamente quando voce digita alguma coisa nele -->
+            </div>
+
+            <div>
+                <label for="fone">Telefone:</label>
+                <input type="tel" name="fone" id="fone" placeholder="DDD + Fone" required>
+            </div>
+
+            <div>
+                <label for="msg">Mensagem:</label>
+                <textarea name="msg" id="msg" placeholder="Duvidas, criticas ou sugestões"></textarea>
+            </div> <!-- textarea cria uma area de texto para voce poder digitar -->
+
+            <div>
+                <input type="submit" name="enviar" id="enviar" value="mandaí!"> <!-- mensagem e o botao da mensagem sao coisas diferentes -->
+            </div>
+
+        </form>
+      </div>
+
+      <div class="mapa">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1758292714835!2d-46.54244178440744!3d-23.5261775661805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e45de28bb23%3A0x1d2ed3122aae28a7!2sSenac%20Penha!5e0!3m2!1spt-PT!2sbr!4v1644416743518!5m2!1spt-PT!2sbr" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+    </main>
+    
+    <!-- rodapé do site -->
+    <footer>
+        <p>Layout realizado utilizando Design Responsivo</p>
+    </footer>
+
+
+    
+ 
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimídia - Responsivando</title>
+
+    <!-- Descrição resumida da página -->
+    <meta name="description" content="Aprenda design responsivo.">
+
+    <!-- Palavras-chave de página -->
+    <meta name="keywords" content="aprenda, video design responsivo">
+
+    <!-- Inserindo favicon-->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- Link para arquivo css externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- cabeçalho contém apenas o menu neste exercício -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Página incial">início</a></li>
+                <li><a href="galeria.html" title="galeria de trabalhos">galeria</a></li>
+                <li><a href="multimidia.html" title="conteúdo multmídia">multimídia</a></li>
+
+                <li><a href="contato.html" title="Fale conosco">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="multimidia">
+        <h1>Conteúdo Multimídia</h1>
+        <h2>Vídeo</h2>
+
+        <!-- Inserindo vídeo diretamente no HTML -->
+        <video controls poster="videos/poster.jpg">
+            <source src="videos/curso-html5.avi" type="video/avi">
+            <source src="videos/curso-html5.mp4" type="video/mp4">
+            <source src="videos/curso-html5.ogv" type="video/ogv">
+            <source src="videos/curso-html5.webm" type="video/webm">
+            Seu navegador não suporta vídeos. Faça o <a href="videos/curso-html5.webm" title="download do vídeo">download</a>.
+        </video>
+
+        <!-- video do Youtube-->
+        <h2>Vídeo do Youtube</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/MEmU-VGM62M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <!-- Audio local -->
+        <h2>Áudio</h2>
+        <audio src="audio/baby-bieber.mp3" controls></audio>
+
+        
+
+        <!--
+            <audio>
+                <source src="" type="">
+                Este navegador não suporta áudio.
+            </audio>
+        -->
+
+        <!-- Audio Online -->
+        <h2>Áudio Embutido</h2>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1181404573&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
+        
+
+        
+
+    </main>
+
+    <!-- rodapé do site -->
+    <footer>
+        <p>Layout realizado utilizando Design Responsivo</p>
+    </footer>
+
+
+    
+ 
+</body>
+</html>
